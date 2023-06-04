@@ -20,16 +20,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 // Route::get('/todo-list', TodoList::class)->name('todo-list');
 
-Route::get('/todo-list', ShowTodos::class)->name('todo-list');
-Route::get('/todo/add', CreateTodo::class);
-Route::get('/todo/edit/{id}', EditTodo::class);
+// Route::get('/todo-list', ShowTodos::class)->name('todo-list');
+// Route::get('/todo/add', CreateTodo::class);
+// Route::get('/todo/edit/{id}', EditTodo::class);
 
+Route::get('/', ShowStudents::class);
 Route::get('/student-list', ShowStudents::class)->name('student-list');
 Route::get('/student/add', CreateStudent::class);
 Route::get('/student/edit/{id}', EditStudent::class);
